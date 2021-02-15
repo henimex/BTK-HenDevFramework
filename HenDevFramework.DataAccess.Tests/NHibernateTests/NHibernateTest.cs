@@ -13,7 +13,8 @@ namespace HenDevFramework.DataAccess.Tests.NHibernateTests
         {
             NhProductDal productDal = new NhProductDal(new SqlServerHelper());
             var result = productDal.GetList();
-            Assert.AreEqual(77,result.Count);
+            Assert.AreEqual(83,result.Count);
+            //83 home 77 work
         }
 
         [TestMethod]
@@ -38,6 +39,14 @@ namespace HenDevFramework.DataAccess.Tests.NHibernateTests
             NhCategoryDal categoryDal = new NhCategoryDal(new SqlServerHelper());
             var result = categoryDal.GetList(x=>x.CategoryName.Contains("s"));
             Assert.AreEqual(6,result.Count);
+        }
+
+        [TestMethod]
+        public void Get_filtered_ProductDetailDto_with_params()
+        {
+            NhProductDal productDal = new NhProductDal(new SqlServerHelper());
+            var result = productDal.GetList(x => x.CategoryId == 1);
+            Assert.AreEqual(14, result.Count);
         }
     }
 }

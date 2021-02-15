@@ -18,18 +18,18 @@ namespace HenDevFramework.Northwind.DataAccess.Concrete.NHibernate.Helpers
         protected override ISessionFactory InitializeFactory()
         {
             //Mapping Varsa
-            //return Fluently.Configure()
-            //        .Database(MsSqlConfiguration.MsSql2012
-            //        .ConnectionString(c => c
-            //        .FromConnectionStringWithKey("NorthwindContext")))
-            //        .Mappings(t => t.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly())).BuildSessionFactory();
+            return Fluently.Configure()
+                    .Database(MsSqlConfiguration.MsSql2012
+                    .ConnectionString(c => c
+                    .FromConnectionStringWithKey("NorthwindContext")))
+                    .Mappings(t => t.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly())).BuildSessionFactory();
 
             //Mapping Yoksa Deneme
-            return Fluently.Configure()
-                .Database(MsSqlConfiguration.MsSql2012
-                    .ConnectionString(c => c
-                        .FromConnectionStringWithKey("NorthwindContext")))
-                .Mappings(t => t.AutoMappings.Add(AutoMap.AssemblyOf<IEntity>())).BuildSessionFactory();
+            //return Fluently.Configure()
+            //    .Database(MsSqlConfiguration.MsSql2012
+            //        .ConnectionString(c => c
+            //            .FromConnectionStringWithKey("NorthwindContext")))
+            //    .Mappings(t => t.AutoMappings.Add(AutoMap.AssemblyOf<IEntity>())).BuildSessionFactory();
         }
     }
 }

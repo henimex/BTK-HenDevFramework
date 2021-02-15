@@ -43,11 +43,10 @@
   <ItemGroup>
     <Compile Include="Concrete\Category.cs" />
     <Compile Include="Concrete\Product.cs" />
+    <Compile Include="DTOs\ProductDetailDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\HenDevFramework.Core\HenDevFramework.Core.csproj">
       <Project>{99B12595-53D9-455F-9C09-8879C1814D84}</Project>
