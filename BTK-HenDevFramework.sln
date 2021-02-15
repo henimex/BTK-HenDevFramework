@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.MvcWebUI.Tests", "HenDevFramework.Northwind.MvcWebUI.Tests\HenDevFramework.Northwind.MvcWebUI.Tests.csproj", "{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.DataAccess.Tests", "HenDevFramework.DataAccess.Tests\HenDevFramework.DataAccess.Tests.csproj", "{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.DataAccess.Tests", "HenDevFramework.DataAccess.Tests\HenDevFramework.Northwind.DataAccess.Tests.csproj", "{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Business.Tests", "HenDevFramework.Northwind.Business.Tests\HenDevFramework.Northwind.Business.Tests.csproj", "{AE9E4A61-ECFB-4946-9C97-AD8313B16A0B}"
 EndProject
