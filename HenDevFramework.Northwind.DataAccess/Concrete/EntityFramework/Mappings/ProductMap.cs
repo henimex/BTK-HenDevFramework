@@ -7,7 +7,6 @@ namespace HenDevFramework.Northwind.DataAccess.Concrete.EntityFramework.Mappings
     {
         public ProductMap()
         {
-
             //Veritabanında bulunan alanlar aynı ise buna gerek yok ama ilerleyen süreçlerde sorun olmaması için yapılmasında fayda var dedi engin hoca.
             ToTable(@"Products", @"dbo");
             HasKey(x => x.ProductId);

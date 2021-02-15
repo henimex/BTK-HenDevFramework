@@ -23,5 +23,21 @@ namespace HenDevFramework.DataAccess.Tests.NHibernateTests
             var result = productDal.GetList(x=>x.ProductName.Contains("ab"));
             Assert.AreEqual(4,result.Count);
         }
+
+        [TestMethod]
+        public void Get_all_returns_all_categories()
+        {
+            NhCategoryDal categoryDal = new NhCategoryDal(new SqlServerHelper());
+            var result = categoryDal.GetList();
+            Assert.AreEqual(8,result.Count);
+        }
+
+        [TestMethod]
+        public void Get_all_with_parameter_returns_filtered_categories()
+        {
+            NhCategoryDal categoryDal = new NhCategoryDal(new SqlServerHelper());
+            var result = categoryDal.GetList(x=>x.CategoryName.Contains("s"));
+            Assert.AreEqual(6,result.Count);
+        }
     }
 }
