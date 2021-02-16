@@ -4,7 +4,7 @@ using FluentValidation;
 using HenDevFramework.Core.CrossCuttingConcerns.Validation.FluentValidation;
 using PostSharp.Aspects;
 
-namespace HenDevFramework.Core.Aspects.Postsharp
+namespace HenDevFramework.Core.Aspects.Postsharp.ValidationAspects
 {
     [Serializable] //Don't Forget
     public class FluentValidationAspect:OnMethodBoundaryAspect

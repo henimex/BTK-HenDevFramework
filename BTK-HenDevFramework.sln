@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Core", "HenDevFramework.Core\HenDevFramework.Northwind.Core.csproj", "{99B12595-53D9-455F-9C09-8879C1814D84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Core", "HenDevFramework.Core\HenDevFramework.Core.csproj", "{99B12595-53D9-455F-9C09-8879C1814D84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Entities", "HenDevFramework.Northwind.Entities\HenDevFramework.Northwind.Entities.csproj", "{7A951809-D07C-4016-AF49-20877496566B}"
 EndProject

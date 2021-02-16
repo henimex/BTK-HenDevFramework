@@ -65,9 +65,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HenDevFramework.Core\HenDevFramework.Northwind.Core.csproj">
+    <ProjectReference Include="..\HenDevFramework.Core\HenDevFramework.Core.csproj">
       <Project>{99B12595-53D9-455F-9C09-8879C1814D84}</Project>
-      <Name>HenDevFramework.Northwind.Core</Name>
+      <Name>HenDevFramework.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\HenDevFramework.Northwind.DataAccess\HenDevFramework.Northwind.DataAccess.csproj">
       <Project>{A802E8A8-7C1B-4E08-9E5B-CDF2A90620C3}</Project>
