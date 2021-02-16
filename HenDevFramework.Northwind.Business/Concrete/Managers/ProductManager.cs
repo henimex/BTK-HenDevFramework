@@ -10,8 +10,10 @@ using HenDevFramework.Northwind.Business.ValidationRules.FluentValidation;
 using HenDevFramework.Northwind.DataAccess.Abstract;
 using HenDevFramework.Northwind.Entities.Concrete;
 using HenDevFramework.Core.Aspects.Postsharp;
+using HenDevFramework.Core.Aspects.Postsharp.CacheAspects;
 using HenDevFramework.Core.Aspects.Postsharp.TransactionAspects;
 using HenDevFramework.Core.Aspects.Postsharp.ValidationAspects;
+using HenDevFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
 
 namespace HenDevFramework.Northwind.Business.Concrete.Managers
 {
@@ -24,6 +26,7 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
             _productDal = productDal;
         }
 
+        [CacheAspect(typeof(MemoryCacheManager))]
         public List<Product> GetAll()
         {
             return _productDal.GetList();
@@ -35,6 +38,8 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
         }
 
         [FluentValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect(typeof(MemoryCacheManager))] 
+        //[CacheRemoveAspect("pattern",typeof(MemoryCacheManager))]
         public Product Add(Product product)
         {
             return _productDal.Add(product);

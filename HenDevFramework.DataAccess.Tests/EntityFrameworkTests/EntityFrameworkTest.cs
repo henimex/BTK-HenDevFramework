@@ -14,7 +14,7 @@ namespace HenDevFramework.DataAccess.Tests.EntityFrameworkTests
         {
             EfProductDal productDal = new EfProductDal();
             var result = productDal.GetList();
-            Assert.AreEqual(77,result.Count);
+            Assert.AreEqual(83,result.Count);
             //83 home 77 work
         }
 
@@ -47,7 +47,7 @@ namespace HenDevFramework.DataAccess.Tests.EntityFrameworkTests
         {
             EfProductDal productDal = new EfProductDal();
             var result = productDal.GetList(x => x.CategoryId == 1);
-            Assert.AreEqual(12, result.Count);
+            Assert.AreEqual(14, result.Count);
             //home 14 work 12
         }
     }
