@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\HenDevFramework.Core\Core.csproj">
+    <ProjectReference Include="..\HenDevFramework.Core\HenDevFramework.Northwind.Core.csproj">
       <Project>{99B12595-53D9-455F-9C09-8879C1814D84}</Project>
-      <Name>Core</Name>
+      <Name>HenDevFramework.Northwind.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

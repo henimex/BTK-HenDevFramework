@@ -77,21 +77,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HenDevFramework.Core\Core.csproj">
+    <ProjectReference Include="..\HenDevFramework.Core\HenDevFramework.Northwind.Core.csproj">
       <Project>{99b12595-53d9-455f-9c09-8879c1814d84}</Project>
-      <Name>Core</Name>
+      <Name>HenDevFramework.Northwind.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HenDevFramework.Northwind.Business\Business.csproj">
+    <ProjectReference Include="..\HenDevFramework.Northwind.Business\HenDevFramework.Northwind.Business.csproj">
       <Project>{7C4EF74B-795E-4972-B7E3-4D317A91CDEF}</Project>
-      <Name>Business</Name>
+      <Name>HenDevFramework.Northwind.Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HenDevFramework.Northwind.DataAccess\DataAccess.csproj">
+    <ProjectReference Include="..\HenDevFramework.Northwind.DataAccess\HenDevFramework.Northwind.DataAccess.csproj">
       <Project>{A802E8A8-7C1B-4E08-9E5B-CDF2A90620C3}</Project>
-      <Name>DataAccess</Name>
+      <Name>HenDevFramework.Northwind.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HenDevFramework.Northwind.Entities\Entities.csproj">
+    <ProjectReference Include="..\HenDevFramework.Northwind.Entities\HenDevFramework.Northwind.Entities.csproj">
       <Project>{7A951809-D07C-4016-AF49-20877496566B}</Project>
-      <Name>Entities</Name>
+      <Name>HenDevFramework.Northwind.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
