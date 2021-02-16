@@ -11,9 +11,11 @@ using HenDevFramework.Northwind.DataAccess.Abstract;
 using HenDevFramework.Northwind.Entities.Concrete;
 using HenDevFramework.Core.Aspects.Postsharp;
 using HenDevFramework.Core.Aspects.Postsharp.CacheAspects;
+using HenDevFramework.Core.Aspects.Postsharp.LogAspects;
 using HenDevFramework.Core.Aspects.Postsharp.TransactionAspects;
 using HenDevFramework.Core.Aspects.Postsharp.ValidationAspects;
 using HenDevFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
+using HenDevFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 
 namespace HenDevFramework.Northwind.Business.Concrete.Managers
 {
@@ -27,6 +29,7 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
         }
 
         [CacheAspect(typeof(MemoryCacheManager))]
+        [LogAspect(typeof(DatabaseLogger))]
         public List<Product> GetAll()
         {
             return _productDal.GetList();
