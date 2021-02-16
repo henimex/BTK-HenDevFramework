@@ -65,17 +65,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HenDevFramework.Core\HenDevFramework.Core.csproj">
+    <ProjectReference Include="..\HenDevFramework.Core\Core.csproj">
       <Project>{99B12595-53D9-455F-9C09-8879C1814D84}</Project>
-      <Name>HenDevFramework.Core</Name>
+      <Name>Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HenDevFramework.Northwind.DataAccess\HenDevFramework.Northwind.DataAccess.csproj">
+    <ProjectReference Include="..\HenDevFramework.Northwind.DataAccess\DataAccess.csproj">
       <Project>{A802E8A8-7C1B-4E08-9E5B-CDF2A90620C3}</Project>
-      <Name>HenDevFramework.Northwind.DataAccess</Name>
+      <Name>DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HenDevFramework.Northwind.Entities\HenDevFramework.Northwind.Entities.csproj">
+    <ProjectReference Include="..\HenDevFramework.Northwind.Entities\Entities.csproj">
       <Project>{7A951809-D07C-4016-AF49-20877496566B}</Project>
-      <Name>HenDevFramework.Northwind.Entities</Name>
+      <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

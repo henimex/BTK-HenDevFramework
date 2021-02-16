@@ -3,43 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Core", "HenDevFramework.Core\HenDevFramework.Core.csproj", "{99B12595-53D9-455F-9C09-8879C1814D84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "HenDevFramework.Core\Core.csproj", "{99B12595-53D9-455F-9C09-8879C1814D84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Entities", "HenDevFramework.Northwind.Entities\HenDevFramework.Northwind.Entities.csproj", "{7A951809-D07C-4016-AF49-20877496566B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "HenDevFramework.Northwind.Entities\Entities.csproj", "{7A951809-D07C-4016-AF49-20877496566B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.DataAccess", "HenDevFramework.Northwind.DataAccess\HenDevFramework.Northwind.DataAccess.csproj", "{A802E8A8-7C1B-4E08-9E5B-CDF2A90620C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "HenDevFramework.Northwind.DataAccess\DataAccess.csproj", "{A802E8A8-7C1B-4E08-9E5B-CDF2A90620C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Business", "HenDevFramework.Northwind.Business\HenDevFramework.Northwind.Business.csproj", "{7C4EF74B-795E-4972-B7E3-4D317A91CDEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "HenDevFramework.Northwind.Business\Business.csproj", "{7C4EF74B-795E-4972-B7E3-4D317A91CDEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.MvcWebUI", "HenDevFramework.Northwind.MvcWebUI\HenDevFramework.Northwind.MvcWebUI.csproj", "{C81CCE10-8697-4F87-9AA2-323141F5501B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebUI", "HenDevFramework.Northwind.MvcWebUI\MvcWebUI.csproj", "{C81CCE10-8697-4F87-9AA2-323141F5501B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.MvcWebUI.Tests", "HenDevFramework.Northwind.MvcWebUI.Tests\HenDevFramework.Northwind.MvcWebUI.Tests.csproj", "{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebUI.Tests", "HenDevFramework.Northwind.MvcWebUI.Tests\MvcWebUI.Tests.csproj", "{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.DataAccess.Tests", "HenDevFramework.DataAccess.Tests\HenDevFramework.Northwind.DataAccess.Tests.csproj", "{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Tests", "HenDevFramework.DataAccess.Tests\DataAccess.Tests.csproj", "{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Business.Tests", "HenDevFramework.Northwind.Business.Tests\HenDevFramework.Northwind.Business.Tests.csproj", "{AE9E4A61-ECFB-4946-9C97-AD8313B16A0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.Tests", "HenDevFramework.Northwind.Business.Tests\Business.Tests.csproj", "{AE9E4A61-ECFB-4946-9C97-AD8313B16A0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.WebApi", "HenDevFramework.Northwind.WebApi\HenDevFramework.Northwind.WebApi.csproj", "{32E0FD1E-FE86-4256-86F5-18AF6CDC38A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "HenDevFramework.Northwind.WebApi\WebApi.csproj", "{32E0FD1E-FE86-4256-86F5-18AF6CDC38A7}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HenDevFramework.Northwind.WcfService2", "HenDevFramework.Northwind.WcfService2\", "{31EF9FD1-5B95-4106-828A-F7621A8943C6}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService", "WCFService\", "{0481A2D4-F610-4CD4-95BD-818F247D573D}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_63179"
-		Debug.AspNetCompiler.PhysicalPath = "HenDevFramework.Northwind.WcfService2\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63179\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_14258"
+		Debug.AspNetCompiler.PhysicalPath = "WCFService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14258\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_63179"
-		Release.AspNetCompiler.PhysicalPath = "HenDevFramework.Northwind.WcfService2\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63179\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_14258"
+		Release.AspNetCompiler.PhysicalPath = "WCFService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14258\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "63179"
-		SlnRelativePath = "HenDevFramework.Northwind.WcfService2\"
+		VWDPort = "14258"
+		SlnRelativePath = "WCFService\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
@@ -85,10 +85,10 @@ Global
 		{32E0FD1E-FE86-4256-86F5-18AF6CDC38A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32E0FD1E-FE86-4256-86F5-18AF6CDC38A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32E0FD1E-FE86-4256-86F5-18AF6CDC38A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31EF9FD1-5B95-4106-828A-F7621A8943C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31EF9FD1-5B95-4106-828A-F7621A8943C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31EF9FD1-5B95-4106-828A-F7621A8943C6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{31EF9FD1-5B95-4106-828A-F7621A8943C6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0481A2D4-F610-4CD4-95BD-818F247D573D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0481A2D4-F610-4CD4-95BD-818F247D573D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0481A2D4-F610-4CD4-95BD-818F247D573D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0481A2D4-F610-4CD4-95BD-818F247D573D}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
