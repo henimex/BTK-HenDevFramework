@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Business", "HenDevFramework.Northwind.Business\HenDevFramework.Northwind.Business.csproj", "{7C4EF74B-795E-4972-B7E3-4D317A91CDEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.MvcWebUI", "HenDevFramework.Northwind.MvcWebUI\HenDevFramework.Northwind.MvcWebUI.csproj", "{C81CCE10-8697-4F87-9AA2-323141F5501B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.MvcWebUI.Tests", "HenDevFramework.Northwind.MvcWebUI.Tests\HenDevFramework.Northwind.MvcWebUI.Tests.csproj", "{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.DataAccess.Tests", "HenDevFramework.DataAccess.Tests\HenDevFramework.Northwind.DataAccess.Tests.csproj", "{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HenDevFramework.Northwind.Business.Tests", "HenDevFramework.Northwind.Business.Tests\HenDevFramework.Northwind.Business.Tests.csproj", "{AE9E4A61-ECFB-4946-9C97-AD8313B16A0B}"
@@ -43,6 +39,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService", "WCFService\",
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceWeb", "InterfaceWeb\InterfaceWeb.csproj", "{73D3E80E-275B-45A3-A703-02202E73CDAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceWeb.Tests", "InterfaceWeb.Tests\InterfaceWeb.Tests.csproj", "{6417D2F5-A955-4F68-84A9-C97066E14540}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,14 +65,6 @@ Global
 		{7C4EF74B-795E-4972-B7E3-4D317A91CDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C4EF74B-795E-4972-B7E3-4D317A91CDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C4EF74B-795E-4972-B7E3-4D317A91CDEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C81CCE10-8697-4F87-9AA2-323141F5501B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C81CCE10-8697-4F87-9AA2-323141F5501B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C81CCE10-8697-4F87-9AA2-323141F5501B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C81CCE10-8697-4F87-9AA2-323141F5501B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA5B10C5-59D8-4C4B-8E3C-F621AACC5A48}.Release|Any CPU.Build.0 = Release|Any CPU
 		{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{344C8B13-D585-4EAF-A8D9-EADB2BF67C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -89,6 +81,14 @@ Global
 		{0481A2D4-F610-4CD4-95BD-818F247D573D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0481A2D4-F610-4CD4-95BD-818F247D573D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{0481A2D4-F610-4CD4-95BD-818F247D573D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{73D3E80E-275B-45A3-A703-02202E73CDAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D3E80E-275B-45A3-A703-02202E73CDAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D3E80E-275B-45A3-A703-02202E73CDAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D3E80E-275B-45A3-A703-02202E73CDAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6417D2F5-A955-4F68-84A9-C97066E14540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6417D2F5-A955-4F68-84A9-C97066E14540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6417D2F5-A955-4F68-84A9-C97066E14540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6417D2F5-A955-4F68-84A9-C97066E14540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
