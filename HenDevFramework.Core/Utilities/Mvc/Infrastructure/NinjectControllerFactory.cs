@@ -7,7 +7,7 @@ using Ninject.Modules;
 
 namespace HenDevFramework.Core.Utilities.Mvc.Infrastructure
 {
-    public class NinjectControllerFactory:DefaultControllerFactory
+    public class NinjectControllerFactory : DefaultControllerFactory
     {
         //ulen ne ugrastım seninle
         //PM> Install-Package Microsoft.AspNet.Mvc -Version 5.2.3
