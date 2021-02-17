@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using HenDevFramework.Northwind.Business.Abstract;
+using HenDevFramework.Northwind.Entities.Concrete;
 using WebUserInterfaceFive.Models;
 
 namespace WebUserInterfaceFive.Controllers
@@ -24,6 +25,13 @@ namespace WebUserInterfaceFive.Controllers
                 Products = _productService.GetAll()
             };
             return View(model);
+        }
+
+        public string Add()
+        {
+            _productService.Add(
+                new Product {CategoryId = 1, ProductName = "Gsm", QuantityPerUnit = "1", UnitPrice = 30});
+            return "Added";
         }
     }
 }
