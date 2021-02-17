@@ -43,6 +43,8 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
 
         [FluentValidationAspect(typeof(ProductValidator))]
         [CacheRemoveAspect(typeof(MemoryCacheManager))] 
+        [LogAspect(typeof(FileLogger))]
+        [LogAspect(typeof(DatabaseLogger))]
         //[CacheRemoveAspect("pattern",typeof(MemoryCacheManager))]
         public Product Add(Product product)
         {
