@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using HenDevFramework.Core.Aspects.Postsharp.ExceptionAspects;
 using HenDevFramework.Core.Aspects.Postsharp.LogAspects;
+using HenDevFramework.Core.Aspects.Postsharp.PerformanceAspects;
 using HenDevFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 
 // General Information about an assembly is controlled through the following
@@ -20,6 +21,7 @@ using HenDevFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 [assembly: LogAspect(typeof(DatabaseLogger), AttributeTargetTypes = "HenDevFramework.Northwind.Business.Concrete.Managers.*")]
 [assembly: ExceptionLogAspect(typeof(FileLogger), AttributeTargetTypes = "HenDevFramework.Northwind.Business.Concrete.Managers.*")]
 [assembly: ExceptionLogAspect(typeof(DatabaseLogger), AttributeTargetTypes = "HenDevFramework.Northwind.Business.Concrete.Managers.*")]
+[assembly: PerformanceCounterAspect(AttributeTargetTypes = "HenDevFramework.Northwind.Business.Concrete.Managers.*")]
 
 
 // Setting ComVisible to false makes the types in this assembly not visible

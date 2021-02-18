@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Transactions;
 using HenDevFramework.Core.CrossCuttingConcerns.Validation.FluentValidation;
@@ -12,6 +13,7 @@ using HenDevFramework.Northwind.Entities.Concrete;
 using HenDevFramework.Core.Aspects.Postsharp;
 using HenDevFramework.Core.Aspects.Postsharp.CacheAspects;
 using HenDevFramework.Core.Aspects.Postsharp.LogAspects;
+using HenDevFramework.Core.Aspects.Postsharp.PerformanceAspects;
 using HenDevFramework.Core.Aspects.Postsharp.TransactionAspects;
 using HenDevFramework.Core.Aspects.Postsharp.ValidationAspects;
 using HenDevFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
@@ -30,8 +32,10 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
         }
 
         [CacheAspect(typeof(MemoryCacheManager))]
+        [PerformanceCounterAspect(2)]
         public List<Product> GetAll()
         {
+            Thread.Sleep(3000);
             return _productDal.GetList();
         }
 

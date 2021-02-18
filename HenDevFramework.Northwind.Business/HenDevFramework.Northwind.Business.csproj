@@ -79,7 +79,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Concrete\Managers\ProductManager.cs" />
-    <Compile Include="Constants\Messages.cs" />
+    <Compile Include="Constants\CustomMessages.cs" />
     <Compile Include="DependencyResolvers\Ninject\BusinessModule.cs" />
     <Compile Include="DependencyResolvers\Ninject\ValidationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

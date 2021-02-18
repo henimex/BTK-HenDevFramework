@@ -7,7 +7,7 @@ using PostSharp.Aspects;
 namespace HenDevFramework.Core.Aspects.Postsharp.ValidationAspects
 {
     [Serializable] //Don't Forget
-    public class FluentValidationAspect:OnMethodBoundaryAspect
+    public class FluentValidationAspect : OnMethodBoundaryAspect
     {
         Type _validatorType;
         public FluentValidationAspect(Type validatorType)
@@ -23,7 +23,7 @@ namespace HenDevFramework.Core.Aspects.Postsharp.ValidationAspects
 
             foreach (var entity in entities)
             {
-                ValidatorTool.FluentValidate(validator,entity);
+                ValidatorTool.FluentValidate(validator, entity);
             }
         }
     }
