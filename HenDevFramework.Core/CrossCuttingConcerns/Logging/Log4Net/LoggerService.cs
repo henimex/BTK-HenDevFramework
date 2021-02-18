@@ -30,22 +30,22 @@ namespace HenDevFramework.Core.CrossCuttingConcerns.Logging.Log4Net
         
         public void Debug(object logMessage)
         {
-            if (IsDebugEnabled) _log.Info(logMessage);
+            if (IsDebugEnabled) _log.Debug(logMessage);
         }
 
         public void Warn(object logMessage)
         {
-            if (IsWarnEnabled) _log.Info(logMessage);
+            if (IsWarnEnabled) _log.Warn(logMessage);
         }
 
         public void Fatal(object logMessage)
         {
-            if (IsFatalEnabled) _log.Info(logMessage);
+            if (IsFatalEnabled) _log.Fatal(logMessage);
         }
 
         public void Error(object logMessage)
         {
-            if (IsErrorEnabled) _log.Info(logMessage);
+            if (IsErrorEnabled) _log.Error(logMessage);
         }
     }
 }

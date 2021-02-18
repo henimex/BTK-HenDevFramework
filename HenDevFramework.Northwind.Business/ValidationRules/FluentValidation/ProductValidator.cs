@@ -18,7 +18,7 @@ namespace HenDevFramework.Northwind.Business.ValidationRules.FluentValidation
             RuleFor(p => p.UnitPrice).GreaterThan(0);
             RuleFor(p => p.QuantityPerUnit).NotEmpty().WithMessage(Messages.NotEmpty);
             RuleFor(p => p.ProductName).Length(2,20).WithMessage(Messages.NotEmpty);
-            RuleFor(p => p.UnitPrice).GreaterThan(20).When(p => p.CategoryId == 1).WithMessage(Messages.Price);
+            RuleFor(p => p.UnitPrice).GreaterThan(20).When(p => p.CategoryId == 1);
             //RuleFor(p => p.ProductName).Must(StartWith);
         }
 

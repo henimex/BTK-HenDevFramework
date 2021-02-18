@@ -19,6 +19,7 @@ using HenDevFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 
 namespace HenDevFramework.Northwind.Business.Concrete.Managers
 {
+
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
@@ -29,8 +30,6 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
         }
 
         [CacheAspect(typeof(MemoryCacheManager))]
-        [LogAspect(typeof(DatabaseLogger))]
-        [LogAspect(typeof(FileLogger))]
         public List<Product> GetAll()
         {
             return _productDal.GetList();
@@ -43,8 +42,6 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
 
         [FluentValidationAspect(typeof(ProductValidator))]
         [CacheRemoveAspect(typeof(MemoryCacheManager))] 
-        [LogAspect(typeof(FileLogger))]
-        [LogAspect(typeof(DatabaseLogger))]
         //[CacheRemoveAspect("pattern",typeof(MemoryCacheManager))]
         public Product Add(Product product)
         {
@@ -64,11 +61,13 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
 
         //Ornek Operasyon
         [TransactionScopeAspect]
+        [FluentValidationAspect(typeof(ProductValidator))]
         public void TransactionalOperation(Product product1, Product product2)
         {
             _productDal.Add(product1);
             //BusinessCodes
             _productDal.Update(product2);
+
 
             /*
              * Burda Coklu işlemde birden fazla islemi denedigimizde eger operasyonlardan bir tanesi fail olursa onceki yapılan islemlerin geri alınmasını saglamak icin yapı olusuturluyor.
