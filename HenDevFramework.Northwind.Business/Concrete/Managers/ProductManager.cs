@@ -11,6 +11,7 @@ using HenDevFramework.Northwind.Business.ValidationRules.FluentValidation;
 using HenDevFramework.Northwind.DataAccess.Abstract;
 using HenDevFramework.Northwind.Entities.Concrete;
 using HenDevFramework.Core.Aspects.Postsharp;
+using HenDevFramework.Core.Aspects.Postsharp.AuthorizationAspects;
 using HenDevFramework.Core.Aspects.Postsharp.CacheAspects;
 using HenDevFramework.Core.Aspects.Postsharp.LogAspects;
 using HenDevFramework.Core.Aspects.Postsharp.PerformanceAspects;
@@ -33,6 +34,7 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
 
         [CacheAspect(typeof(MemoryCacheManager))]
         [PerformanceCounterAspect(2)]
+        //[SecuredOperation(Roles="Admin")]
         public List<Product> GetAll()
         {
             Thread.Sleep(3000);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -36,6 +37,7 @@ namespace HenDevFramework.Core.Aspects.Postsharp.ExceptionAspects
 
         public override void OnException(MethodExecutionArgs args)
         {
+            Debug.WriteLine("Error Logging 3");
             _loggerService?.Error(args.Exception);
         }
     }

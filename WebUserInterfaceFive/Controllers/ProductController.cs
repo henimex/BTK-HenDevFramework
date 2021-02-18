@@ -37,8 +37,8 @@ namespace WebUserInterfaceFive.Controllers
         public string AddUpdate()
         {
             _productService.TransactionalOperation(
-                new Product {CategoryId = 1, ProductName = "TransactionTest1", QuantityPerUnit = "1", UnitPrice = 21},
-                new Product {ProductId = 2, CategoryId = 1, ProductName = "TransactionTest2", QuantityPerUnit = "1", UnitPrice = 5});
+                new Product { CategoryId = 1, ProductName = "Computer", QuantityPerUnit = "1", UnitPrice = 2 },
+                new Product { ProductId = 2, CategoryId = 1, ProductName = "Computer 2", QuantityPerUnit = "1", UnitPrice = 30 });
             return "Transaction Operation Done";
         }
     }
