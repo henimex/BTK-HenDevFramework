@@ -23,7 +23,10 @@ namespace HenDevFramework.Northwind.Business.DependencyResolvers.Ninject
             Bind<IProductService>().To<ProductManager>().InSingletonScope();
             Bind<IProductDal>().To<EfProductDal>().InSingletonScope();
             Bind<ICategoryDal>().To<EfCategoryDal>().InSingletonScope();
-
+            
+            Bind<IUserDal>().To<EfUserDal>().InSingletonScope();
+            Bind<IUserService>().To<UserManager>().InSingletonScope();
+            
             Bind(typeof(IQueryableRepository<>)).To(typeof(EfQuaryableRepository<>));
             Bind<DbContext>().To<NorthwindContext>();
 

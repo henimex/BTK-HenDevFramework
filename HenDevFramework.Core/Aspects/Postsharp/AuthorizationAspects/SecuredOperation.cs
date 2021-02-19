@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security;
 using System.Text;
@@ -17,10 +18,11 @@ namespace HenDevFramework.Core.Aspects.Postsharp.AuthorizationAspects
         {
             string[] roles = Roles.Split(',');
             bool isAuthorized = false;
-            for (int i = 0; i < Roles.Length; i++)
+            for (int i = 0; i < roles.Length; i++)
             {
                 if (System.Threading.Thread.CurrentPrincipal.IsInRole(roles[i]))
                 {
+                    Debug.WriteLine(System.Threading.Thread.CurrentPrincipal);
                     isAuthorized = true;
                 }
             }

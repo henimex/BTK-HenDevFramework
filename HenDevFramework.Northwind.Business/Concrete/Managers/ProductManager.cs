@@ -34,7 +34,7 @@ namespace HenDevFramework.Northwind.Business.Concrete.Managers
 
         [CacheAspect(typeof(MemoryCacheManager))]
         [PerformanceCounterAspect(2)]
-        //[SecuredOperation(Roles="Admin")]
+        [SecuredOperation(Roles="Admin")]
         public List<Product> GetAll()
         {
             Thread.Sleep(3000);
